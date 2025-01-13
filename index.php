@@ -115,7 +115,7 @@ if (isset($_SESSION['usuario'])) { // Si el usuario ya se ha autenticado
                                         <label for="inputNombre" class="col-sm-2 col-form-label">Name:</label>
                                         <div class="col-sm-10">
                                             <?php if (isset($petRegistro) || isset($errorRegistro)): ?>
-                                                <input id="inputNombre" type="text" value="<?= (isset($usuario) && $usuario) ? htmlspecialchars($usuario) : "" ?>"
+                                                <input id="inputNombre" type="text" value="<?= ($usuario ?? false) ? htmlspecialchars($usuario) : "" ?>"
                                                        class="form-control  col-sm-10 <?= (isset($usuarioValido) ? ($usuarioValido ? "is-valid" : "is-invalid") : "") ?>" 
                                                        id="inputNombre" placeholder="Nombre" name="nombre">
                                                 <div class="col-sm-10 invalid-feedback">
@@ -172,4 +172,3 @@ if (isset($_SESSION['usuario'])) { // Si el usuario ya se ha autenticado
         </div>
     </body>
 </html>
-
