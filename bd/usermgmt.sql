@@ -43,8 +43,8 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `password`, `email`) VALUES
-(1, 'ivan', 'ivan', 'ivan@mail.com'),
-(2, 'pedro', 'pedro', 'pedro@mail.com');
+(1, 'ivan', 'ivan1', 'ivan@mail.com'),
+(2, 'pedro', 'pedro1', 'pedro@mail.com');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
