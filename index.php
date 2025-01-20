@@ -94,8 +94,7 @@ if (isset($_SESSION['usuario'])) { // Si el usuario ya se ha autenticado
                     <?php endif ?>
                 </div>
             </nav>
-            <div class= "d-flex flex-column">
-                <div class="row justify-content-center mt-5">
+            <div class= "d-flex flex- justify-content-center mt-5">
                     <div class="col-md-8">
                         <?php if (isset($errorLogin)): ?>
                             <div class="alert alert-danger" role="alert">Error de login</div>
@@ -167,7 +166,7 @@ if (isset($_SESSION['usuario'])) { // Si el usuario ya se ha autenticado
                             </div>
                         </div>
                     </div>
-                </div>
+                
             </div>
         </div>
     </body>
